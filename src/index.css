@@ -1,0 +1,140 @@
+:root {
+	--background-color: #111;
+	--text-color: #fff;
+
+	--card-color: #555;
+	--contents-color: #333;
+	--contents-text-color: #fff;
+	--layer-color: #222;
+
+	--spacing: 16px;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--background-color);
+
+	color: var(--text-color);
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body, h1, h2 {
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: var(--spacing);
+	padding: var(--spacing);
+}
+
+header, main {
+	width: 100%;
+}
+
+main {
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: var(--spacing);
+	text-align: center;
+}
+
+#card {
+	background-color: var(--card-color);
+
+	padding: var(--spacing);
+	border-radius: 8px;
+
+	width: 60%;
+	min-width: 700px;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: var(--spacing);
+
+	position: relative;
+}
+
+#wrapper {
+	aspect-ratio: 4/3;
+}
+
+#layer {
+	image-rendering: pixelated;
+
+	position: absolute;
+
+	top: var(--spacing);
+	left: var(--spacing);
+}
+
+#contents {
+	background-color: var(--contents-color);
+	color: var(--contents-text-color);
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	font-size: 4.5rem;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+#text {
+	width: 100%;
+	word-wrap: break-word;
+
+	user-select: none;
+}
+
+#editor {
+	display: flex;
+	flex-direction: column;
+
+	gap: var(--spacing);
+}
+
+#editor.hidden {
+	display: none;
+}
+
+#inputs {
+	display: flex;
+	gap: var(--spacing);
+}
+
+textarea, button {
+	padding: calc(var(--spacing) / 2);
+	border-radius: 8px;
+
+	border: 0;
+
+	font-family: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+* {
+	box-sizing: border-box;
+}

@@ -1,0 +1,51 @@
+{
+	"name": "@haykam821/scratchcard",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Allows customizing a message for others to scratch off and reveal.",
+	"main": "./src/index.html",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"lint": "eslint \"./**/*.ts\" --ignore-path .gitignore"
+	},
+	"keywords": [
+		"scratchcard",
+		"message",
+		"hidden",
+		"webapp"
+	],
+	"author": "haykam821",
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^8.34.1",
+		"@typescript-eslint/parser": "^8.34.1",
+		"eslint": "^8.57.1",
+		"eslint-config-haykam": "^1.24.0",
+		"vite": "^6.3.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haykam821/Scratchcard.git"
+	},
+	"bugs": {
+		"url": "https://github.com/haykam821/Scratchcard/issues"
+	},
+	"homepage": "https://github.com/haykam821/Scratchcard#readme",
+	"eslintConfig": {
+		"extends": [
+			"eslint-config-haykam",
+			"plugin:@typescript-eslint/eslint-recommended",
+			"plugin:@typescript-eslint/recommended"
+		],
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"rules": {
+			"no-shadow": "off",
+			"@typescript-eslint/no-shadow": "error",
+			"sort-imports": "error"
+		}
+	}
+}
