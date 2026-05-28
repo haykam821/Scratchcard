@@ -1,10 +1,9 @@
-import { HiddenMessage, applyMessage } from "./utils/message";
-import { Pos, clearLastPos, updateLastPos } from "./utils/mouse";
-import { applyMessageFromUrl, encodeMessage } from "./utils/parse";
-import { canvas, contents, createButton, input, labelInput } from "./utils/elements";
-
-import { clearSavedNoisePattern, createNoisePattern } from "./utils/pattern";
 import { getColor } from "./utils/color";
+import { canvas, contents, createButton, input, labelInput } from "./utils/elements";
+import { applyMessage, HiddenMessage } from "./utils/message";
+import { clearLastPos, Pos, updateLastPos } from "./utils/mouse";
+import { applyMessageFromUrl, encodeMessage } from "./utils/parse";
+import { clearSavedNoisePattern, createNoisePattern } from "./utils/pattern";
 
 const CLEAR_RADIUS = 32;
 const INTERPOLATE_STEPS = 16;

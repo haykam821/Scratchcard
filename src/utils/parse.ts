@@ -1,6 +1,5 @@
-import { HiddenMessage, applyMessage, normalizeMessage } from "./message";
-
 import { editor } from "./elements";
+import { applyMessage, HiddenMessage, normalizeMessage } from "./message";
 
 export async function parseMessage(hash: string): Promise<HiddenMessage | null> {
 	hash = hash.trim();
